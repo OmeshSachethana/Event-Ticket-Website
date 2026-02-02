@@ -1,0 +1,88 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Summer Music Festival",
+      "description": "Join us for the biggest music festival of the year! Featuring top artists from around the world, amazing food trucks, and unforgettable experiences.",
+      "date": "2024-06-15T18:00:00",
+      "location": "Central Park, New York City",
+      "price": 99,
+      "category": "concert",
+      "image": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&auto=format&fit=crop",
+      "availableSeats": 45,
+      "venue": "Main Stage, Central Park",
+      "organizer": "Music Events Inc.",
+      "tags": ["music", "festival", "outdoor", "summer"]
+    },
+    {
+      "id": 2,
+      "title": "Tech Innovators Conference",
+      "description": "A gathering of the brightest minds in technology. Learn about AI, blockchain, and the future of tech from industry leaders.",
+      "date": "2024-07-20T09:00:00",
+      "location": "Moscone Center, San Francisco",
+      "price": 149,
+      "category": "conference",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&auto=format&fit=crop",
+      "availableSeats": 120,
+      "venue": "North Hall, Moscone Center",
+      "organizer": "TechGlobal",
+      "tags": ["technology", "conference", "networking", "innovation"]
+    },
+    {
+      "id": 3,
+      "title": "Championship Basketball Finals",
+      "description": "Witness the epic showdown between the top two teams in the championship finals. Guaranteed to be an unforgettable game!",
+      "date": "2024-05-30T20:00:00",
+      "location": "Madison Square Garden, NYC",
+      "price": 89,
+      "category": "sports",
+      "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&auto=format&fit=crop",
+      "availableSeats": 200,
+      "venue": "Main Arena",
+      "organizer": "NBA Events",
+      "tags": ["sports", "basketball", "championship", "live"]
+    },
+    {
+      "id": 4,
+      "title": "Food & Wine Experience",
+      "description": "Sample gourmet foods and fine wines from around the world. Meet celebrity chefs and attend cooking demonstrations.",
+      "date": "2024-08-10T16:00:00",
+      "location": "Pier 94, NYC",
+      "price": 75,
+      "category": "food",
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop",
+      "availableSeats": 180,
+      "venue": "Pier 94 Exhibition Hall",
+      "organizer": "Gourmet Events",
+      "tags": ["food", "wine", "cooking", "tasting"]
+    },
+    {
+      "id": 5,
+      "title": "Yoga & Wellness Retreat",
+      "description": "A full day of yoga, meditation, and wellness workshops in a peaceful natural setting.",
+      "date": "2024-06-22T08:00:00",
+      "location": "Hudson Valley Retreat Center",
+      "price": 65,
+      "category": "workshop",
+      "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&auto=format&fit=crop",
+      "availableSeats": 50,
+      "venue": "Main Pavilion",
+      "organizer": "Zen Wellness",
+      "tags": ["yoga", "wellness", "retreat", "meditation"]
+    },
+    {
+      "id": 6,
+      "title": "Broadway Musical: Hamilton",
+      "description": "Experience the award-winning Broadway musical that's taken the world by storm.",
+      "date": "2024-07-05T19:30:00",
+      "location": "Richard Rodgers Theatre, NYC",
+      "price": 199,
+      "category": "theater",
+      "image": "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&auto=format&fit=crop",
+      "availableSeats": 25,
+      "venue": "Main Stage",
+      "organizer": "Broadway Productions",
+      "tags": ["theater", "musical", "broadway", "hamilton"]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import TicketCard from "../../components/TicketCard.astro";
+
+const tickets = [
+  {
+    id: 1,
+    ticketNumber: "ET-789456",
+    eventTitle: "Summer Music Festival",
+    eventDate: "2024-06-15",
+    eventLocation: "Central Park, NYC",
+    quantity: 2,
+    totalAmount: 208,
+    status: "Confirmed",
+    purchaseDate: "2024-05-01"
+  },
+  {
+    id: 2,
+    ticketNumber: "ET-123789",
+    eventTitle: "Tech Innovators Conference",
+    eventDate: "2024-07-20",
+    eventLocation: "Moscone Center, SF",
+    quantity: 1,
+    totalAmount: 154,
+    status: "Pending",
+    purchaseDate: "2024-04-28"
+  },
+  {
+    id: 3,
+    ticketNumber: "ET-456123",
+    eventTitle: "Championship Basketball Finals",
+    eventDate: "2024-05-30",
+    eventLocation: "Madison Square Garden",
+    quantity: 4,
+    totalAmount: 376,
+    status: "Cancelled",
+    purchaseDate: "2024-04-20"
+  }
+];
+---
+
+<Layout title="My Tickets - EventHub">
+  <div class="pt-8 pb-20">
+    <div class="container mx-auto px-4">
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">My Tickets</h1>
+        <p class="text-gray-600 text-lg">Manage and view all your booked tickets</p>
+      </div>
+      
+      <!-- Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500 text-sm">Total Tickets</p>
+              <p class="text-3xl font-bold text-gray-800">8</p>
+            </div>
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-ticket-alt text-2xl text-indigo-600"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500 text-sm">Upcoming Events</p>
+              <p class="text-3xl font-bold text-gray-800">3</p>
+            </div>
+            <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-calendar-check text-2xl text-emerald-600"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-500 text-sm">Total Spent</p>
+              <p class="text-3xl font-bold text-gray-800">$738</p>
+            </div>
+            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-dollar-sign text-2xl text-purple-600"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Filter -->
+      <div class="mb-8">
+        <div class="flex flex-wrap gap-2">
+          <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium">
+            All Tickets
+          </button>
+          <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-medium">
+            Upcoming
+          </button>
+          <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-medium">
+            Past Events
+          </button>
+          <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-medium">
+            Cancelled
+          </button>
+        </div>
+      </div>
+      
+      <!-- Tickets List -->
+      <div class="space-y-6">
+        {tickets.map((ticket) => (
+          <TicketCard ticket={ticket} />
+        ))}
+      </div>
+      
+      <!-- No tickets state -->
+      <div class="text-center py-12 hidden">
+        <div class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="fas fa-ticket-alt text-4xl text-gray-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">No Tickets Yet</h3>
+        <p class="text-gray-600 mb-8 max-w-md mx-auto">
+          You haven't booked any tickets yet. Browse our events and book your first experience!
+        </p>
+        <a href="/events" class="btn-primary">
+          Browse Events
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
